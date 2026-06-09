@@ -1,0 +1,128 @@
+<title>Quienes Somos | PEA</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap');
+*{box-sizing:border-box;margin:0;padding:0}
+.pea{font-family:'Inter',sans-serif;background:#f0f6ff;color:#0d1b2e}
+.pea-nav{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:1rem 2rem;
+  background:rgba(255,255,255,0.85);
+  backdrop-filter:blur(12px);
+  border-bottom:1px solid rgba(59,130,246,0.15);
+  position:relative;
+}
+.pea-logo{
+  position:absolute;
+  left:2rem;
+  font-family:'Playfair Display',serif;
+  font-size:20px;
+  font-weight:700;
+  color:#1d4ed8;
+}
+.pea-logo span{color:#0ea5e9}
+.nav-links{display:flex;gap:1.5rem;list-style:none}
+.nav-links a{font-size:13px;color:#374151;text-decoration:none}
+.nav-links a.active{color:#1d4ed8;font-weight:500}
+.nav-btn{font-size:13px;font-family:'Inter',sans-serif;font-weight:600;background:linear-gradient(135deg,#1d4ed8,#0ea5e9);color:#ffffff;border:none;padding:8px 18px;border-radius:8px;cursor:pointer;box-shadow:0 2px 10px rgba(29,78,216,0.35)}
+.page-hero{padding:3.5rem 2rem 2rem;background:linear-gradient(145deg,#eff6ff,#e0f2fe 60%,#f0f9ff);border-bottom:1px solid rgba(59,130,246,0.12)}
+.page-eyebrow{font-size:11px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#0ea5e9;margin-bottom:.5rem}
+.page-title{font-family:'Playfair Display',serif;font-size:36px;font-weight:700;color:#0d1b2e;letter-spacing:-0.5px;margin-bottom:.5rem}
+.page-sub{font-size:15px;color:#4b5563}
+.pea-sep{height:1px;background:linear-gradient(to right,transparent,rgba(59,130,246,0.2),transparent);margin:0 2rem}
+.mv-section{padding:3rem 2rem}
+.mv-grid{display:grid;grid-template-columns:1fr 1fr;gap:2rem}
+.mv-card{background:rgba(255,255,255,0.9);border:1px solid rgba(59,130,246,0.15);border-radius:16px;padding:2rem;box-shadow:0 2px 16px rgba(29,78,216,0.07),inset 0 1px 0 #fff}
+.mv-icon{font-size:28px;color:#1d4ed8;margin-bottom:1rem}
+.mv-label{font-size:11px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#0ea5e9;margin-bottom:.5rem}
+.mv-title{font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:#0d1b2e;margin-bottom:1rem}
+.mv-text{font-size:14px;color:#4b5563;line-height:1.8}
+.vision-section{padding:1rem 2rem 3rem}
+.vs-title{font-family:'Playfair Display',serif;font-size:24px;font-weight:700;color:#0d1b2e;margin-bottom:1.5rem;letter-spacing:-.5px}
+.vs-label{font-size:11px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#0ea5e9;margin-bottom:.5rem}
+.vs-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.vs-card{background:rgba(255,255,255,0.9);border:1px solid rgba(59,130,246,0.15);border-radius:14px;overflow:hidden;box-shadow:0 2px 12px rgba(29,78,216,0.07),inset 0 1px 0 #fff}
+.vs-img{height:130px;overflow:hidden}
+.vs-img img{width:100%;height:100%;object-fit:cover}
+.vs-body{padding:1rem}
+.vs-text{font-size:13px;color:#4b5563;line-height:1.65}
+.pea-footer{background:#0d1b2e;padding:1.5rem 2rem;display:flex;justify-content:space-between;align-items:center}
+.footer-logo{font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:#60a5fa}
+.footer-txt{font-size:12px;color:#6b7280}
+</style>
+<div class="pea">
+  <nav class="pea-nav">
+    <div class="pea-logo">P<span>EA</span></div>
+    <ul class="nav-links">
+      <li><a href="inicio.html">Inicio</a></li>
+      <li><a href="mision.html" class="active">Quiénes Somos</a></li>
+      <li><a href="productos.html">Productos</a></li>
+      <li><a href="campanas.html">Campañas</a></li>
+      <li><a href="financiacion.html">Financiación</a></li>
+    </ul>
+    
+  </nav>
+
+  <div class="page-hero">
+    <p class="page-eyebrow">Plataforma Educativa Avanzada</p>
+    <h1 class="page-title">Plataforma Educativa Avanzada (PEA)</h1>
+    <p class="page-sub">Educación de calidad, accesible e igualitaria para todos.</p>
+  </div>
+
+  <section class="mv-section">
+    <div class="mv-grid">
+      <div class="mv-card">
+        <i class="ti ti-target mv-icon" aria-hidden="true"></i>
+        <p class="mv-label">Misión</p>
+        <h2 class="mv-title">Quiénes Somos</h2>
+        <p class="mv-text">Nosotros somos <strong style="color:#1d4ed8">PEA (Plataforma Educativa Avanzada)</strong>, una empresa basada en el 4° objetivo de la Agenda 2030: Educación de calidad. Nuestro propósito es hacer de México un país más desarrollado en educación, formando jóvenes de alto rendimiento y éxito, de manera accesible e igualitaria para todos.</p>
+      </div>
+      <div class="mv-card">
+        <i class="ti ti-rocket mv-icon" aria-hidden="true"></i>
+        <p class="mv-label">Misión principal</p>
+        <h2 class="mv-title">Misión</h2>
+        <p class="mv-text">Nuestra misión principal es impulsar a los jóvenes para que terminen sus estudios mediante escuelas de alto rendimiento, igualitarias, accesibles e inspiradoras. Buscamos crear jóvenes apasionados por su futuro, sacándolos de su zona de confort para experimentar nuevas oportunidades que los inspiren y motiven.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="pea-sep"></div>
+
+  <section class="vision-section">
+    <p class="vs-label">Lo que buscamos lograr</p>
+    <h2 class="vs-title">Visión</h2>
+    <div class="vs-grid">
+      <div class="vs-card">
+        <div class="vs-img"><img src="https://digitalfamily.mx/innovandojuntos/wp-content/uploads/2022/12/aprendizaje-inclusivo.png" alt="Educación inclusiva"></div>
+        <div class="vs-body"><p class="vs-text">Convertirse en una empresa referente de la educación en México que garantice acceso igualitario a una educación de calidad, sin importar el nivel socioeconómico, impulsando el aprendizaje inclusivo y accesible para todos los jóvenes.</p></div>
+      </div>
+      <div class="vs-card">
+        <div class="vs-img"><img src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=400" alt="Escuelas innovadoras"></div>
+        <div class="vs-body"><p class="vs-text">Crear una red de apoyo para las escuelas y también una oportunidad para aquellas personas que no cuentan con las posibilidades de asistir a una escuela.</p></div>
+      </div>
+      <div class="vs-card">
+        <div class="vs-img"><img src="https://images.unsplash.com/photo-1573164574572-cb89e39749b4?w=400" alt="Desarrollo nacional"></div>
+        <div class="vs-body"><p class="vs-text">Ser motor del desarrollo social y económico de México mediante la educación, formando generaciones de jóvenes preparados para transformar positivamente su entorno.</p></div>
+      </div>
+      <div class="vs-card">
+        <div class="vs-img"><img src="https://www.iuv.edu.mx/wp-content/uploads/2024/01/Imagen-blog-4_Escritorio.png" alt="Tecnología educativa"></div>
+        <div class="vs-body"><p class="vs-text">Incorporar tecnología educativa avanzada y prácticas sostenibles que mejoren la experiencia de aprendizaje, fomentando una educación moderna, digital y comprometida con el medio ambiente.</p></div>
+      </div>
+      <div class="vs-card">
+        <div class="vs-img"><img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=400" alt="Impacto global"></div>
+        <div class="vs-body"><p class="vs-text">Posicionar a PEA como un referente internacional en educación innovadora y equitativa, colaborando con instituciones globales para contribuir a los objetivos mundiales de desarrollo sostenible.</p></div>
+      </div>
+      <div class="vs-card">
+        <div class="vs-img"><img src="https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?w=400" alt="Valores humanos"></div>
+        <div class="vs-body"><p class="vs-text">Forjar una comunidad educativa que transmita conocimientos, valores humanos, empatía, respeto y responsabilidad social, formando jóvenes íntegros capaces de construir un futuro justo y solidario.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="pea-footer">
+    <div class="footer-logo">PEA</div>
+    <p class="footer-txt">Plataforma Educativa Avanzada · PFA 3108</p>
+  </footer>
+</div>

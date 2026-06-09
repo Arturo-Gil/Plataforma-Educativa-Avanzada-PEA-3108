@@ -1,0 +1,246 @@
+<title>Productos | PEA</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap');
+*{box-sizing:border-box;margin:0;padding:0}
+.pea{font-family:'Inter',sans-serif;background:#f0f6ff;color:#0d1b2e}
+.pea-nav{display:flex;align-items:center;justify-content:space-between;padding:1rem 2rem;background:rgba(255,255,255,0.85);backdrop-filter:blur(12px);border-bottom:1px solid rgba(59,130,246,0.15)}
+.pea-logo{font-family:'Playfair Display',serif;font-size:20px;font-weight:700;color:#1d4ed8}
+.pea-logo span{color:#0ea5e9}
+.nav-links{display:flex;gap:1.5rem;list-style:none}
+.nav-links a{font-size:13px;color:#374151;text-decoration:none}
+.nav-links a.active{color:#1d4ed8;font-weight:500}
+.nav-btn{font-size:13px;font-family:'Inter',sans-serif;font-weight:600;background:linear-gradient(135deg,#1d4ed8,#0ea5e9);color:#ffffff;border:none;padding:8px 18px;border-radius:8px;cursor:pointer;box-shadow:0 2px 10px rgba(29,78,216,0.35)}
+.page-hero{padding:3rem 2rem 2rem;background:linear-gradient(145deg,#eff6ff,#e0f2fe 60%,#f0f9ff);border-bottom:1px solid rgba(59,130,246,0.12)}
+.page-eyebrow{font-size:11px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#0ea5e9;margin-bottom:.5rem}
+.page-title{font-family:'Playfair Display',serif;font-size:34px;font-weight:700;color:#0d1b2e;margin-bottom:.5rem;letter-spacing:-.5px}
+.page-sub{font-size:15px;color:#4b5563}
+.prod-section{padding:2.5rem 2rem}
+.prod-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.prod-card{background:rgba(255,255,255,0.92);border:1px solid rgba(59,130,246,0.15);border-radius:16px;overflow:hidden;box-shadow:0 4px 20px rgba(29,78,216,0.08),inset 0 1px 0 #fff;display:flex;flex-direction:column}
+.prod-img{height:150px;overflow:hidden}
+.prod-img img{width:100%;height:100%;object-fit:cover;transition:transform .3s}
+.prod-body{padding:1.25rem;flex:1;display:flex;flex-direction:column}
+.prod-name{font-size:14px;font-weight:600;color:#1e3a8a;margin-bottom:6px}
+.prod-desc{font-size:12px;color:#6b7280;line-height:1.6;margin-bottom:auto;padding-bottom:12px}
+.prod-footer{display:flex;align-items:center;justify-content:space-between;padding-top:12px;border-top:1px solid rgba(59,130,246,0.1)}
+.prod-price{font-family:'Playfair Display',serif;font-size:20px;font-weight:700;background:linear-gradient(135deg,#1d4ed8,#0ea5e9);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.prod-btn{font-size:12px;font-family:'Inter',sans-serif;font-weight:600;background:linear-gradient(135deg,#1d4ed8,#0ea5e9);color:#ffffff;border:none;padding:7px 14px;border-radius:7px;cursor:pointer;box-shadow:0 2px 8px rgba(29,78,216,0.3)}
+.pea-footer{background:#0d1b2e;padding:1.5rem 2rem;display:flex;justify-content:space-between;align-items:center;margin-top:2rem}
+.footer-logo{font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:#60a5fa}
+.footer-txt{font-size:12px;color:#6b7280}
+.cart-btn{
+  background:rgba(255,255,255,.9);
+  border:1px solid rgba(59,130,246,.2);
+  color:#1d4ed8;
+  padding:8px 14px;
+  border-radius:8px;
+  cursor:pointer;
+  font-weight:600;
+}
+
+.cart-panel{
+  position:fixed;
+  top:0;
+  right:-350px;
+  width:350px;
+  height:100vh;
+  background:rgba(255,255,255,.97);
+  backdrop-filter:blur(12px);
+  border-left:1px solid rgba(59,130,246,.15);
+  box-shadow:-10px 0 30px rgba(29,78,216,.1);
+  transition:.35s;
+  z-index:1000;
+  padding:1.5rem;
+}
+
+.cart-panel.open{
+  right:0;
+}
+
+.cart-title{
+  font-family:'Playfair Display',serif;
+  color:#1d4ed8;
+  font-size:24px;
+  margin-bottom:1rem;
+}
+
+.cart-item{
+  padding:.8rem;
+  border:1px solid rgba(59,130,246,.12);
+  border-radius:10px;
+  margin-bottom:.7rem;
+  background:#f8fbff;
+}
+
+.cart-total{
+  margin-top:1rem;
+  font-weight:700;
+  color:#1d4ed8;
+  font-size:18px;
+}
+
+.checkout-btn{
+  width:100%;
+  margin-top:1rem;
+  background:linear-gradient(135deg,#1d4ed8,#0ea5e9);
+  color:white;
+  border:none;
+  padding:12px;
+  border-radius:10px;
+  cursor:pointer;
+  font-weight:600;
+}
+</style>
+<div class="pea">
+  <nav class="pea-nav">
+    <div class="pea-logo">P<span>EA</span></div>
+    <ul class="nav-links">
+      <li><a href="inicio.html">Inicio</a></li>
+      <li><a href="mision.html">Quiénes Somos</a></li>
+      <li><a href="productos.html" class="active">Productos</a></li>
+      <li><a href="campanas.html">Campañas</a></li>
+      <li><a href="financiacion.html">Financiación</a></li>
+    </ul>
+
+
+<button class="cart-btn" onclick="toggleCart()">
+ 🛒 <span id="cart-count">0</span>
+</button>
+  </nav>
+  <div class="page-hero">
+    <p class="page-eyebrow">Catálogo educativo</p>
+    <h1 class="page-title">Nuestros Productos</h1>
+    <p class="page-sub">Materiales educativos, herramientas digitales y cursos diseñados para impulsar la educación en México.</p>
+  </div>
+  <section class="prod-section">
+    <div class="prod-grid">
+      <div class="prod-card">
+        <div class="prod-img"><img src="https://empowertic.com/wp-content/uploads/2023/05/pexels-george-milton-7014337-scaled.jpg" alt="Kit educativo digital"></div>
+        <div class="prod-body">
+          <p class="prod-name">Kit Educativo Digital PEA</p>
+          <p class="prod-desc">Incluye recursos digitales, guías de estudio y acceso a materiales exclusivos para nivel secundaria y preparatoria.</p>
+          <div class="prod-footer"><span class="prod-price">$249 MXN</span><button class="prod-btn"
+onclick="addToCart('Kit Educativo Digital PEA',249)">
+Adquirir
+</button></div>
+        </div>
+      </div>
+      <div class="prod-card">
+        <div class="prod-img"><img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=400" alt="Cuadernos"></div>
+        <div class="prod-body">
+          <p class="prod-name">Cuadernos Profesionales PEA</p>
+          <p class="prod-desc">Diseñados para estudiantes de alto rendimiento. Papel premium y resistente.</p>
+          <div class="prod-footer"><span class="prod-price">$79 MXN</span><button class="prod-btn"
+onclick="addToCart('Kit Educativo Digital PEA',249)">
+Adquirir
+</button></div>
+        </div>
+      </div>
+      <div class="prod-card">
+        <div class="prod-img"><img src="https://images.unsplash.com/photo-1513258496099-48168024aec0?w=400" alt="Curso virtual"></div>
+        <div class="prod-body">
+          <p class="prod-name">Curso Virtual: Hábitos de Estudio</p>
+          <p class="prod-desc">Curso en video de 6 módulos con actividades diseñadas para mejorar el rendimiento académico.</p>
+          <div class="prod-footer"><span class="prod-price">$349 MXN</span><button class="prod-btn"
+onclick="addToCart('Kit Educativo Digital PEA',249)">
+Adquirir
+</button></div>
+        </div>
+      </div>
+      <div class="prod-card">
+        <div class="prod-img"><img src="https://fundacioncarlosslim.org/wp-content/uploads/2023/12/desarrollo-materiales-educativos-digitales-1.jpg" alt="Plataforma PEA"></div>
+        <div class="prod-body">
+          <p class="prod-name">Acceso a Plataforma PEA Premium</p>
+          <p class="prod-desc">Incluye asesorías, ejercicios interactivos y evaluaciones automáticas.</p>
+          <div class="prod-footer"><span class="prod-price">$99 MXN/mes</span><button class="prod-btn"
+onclick="addToCart('Kit Educativo Digital PEA',249)">
+Adquirir
+</button></div>
+        </div>
+      </div>
+      <div class="prod-card">
+        <div class="prod-img"><img src="https://images.unsplash.com/photo-1596495577886-d920f1fb7238?w=400" alt="Manual educativo"></div>
+        <div class="prod-body">
+          <p class="prod-name">Manual de Estrategias Educativas</p>
+          <p class="prod-desc">Guía profesional con técnicas de aprendizaje comprobadas.</p>
+          <div class="prod-footer"><span class="prod-price">$199 MXN</span><button class="prod-btn"
+onclick="addToCart('Kit Educativo Digital PEA',249)">
+Adquirir
+</button></div>
+        </div>
+      </div>
+      <div class="prod-card">
+        <div class="prod-img"><img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=400" alt="Programación para jóvenes"></div>
+        <div class="prod-body">
+          <p class="prod-name">Curso: Introducción a la Programación</p>
+          <p class="prod-desc">Curso básico de programación para jóvenes con proyectos guiados.</p>
+          <div class="prod-footer"><span class="prod-price">$429 MXN</span><button class="prod-btn"
+onclick="addToCart('Kit Educativo Digital PEA',249)">
+Adquirir
+</button></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="cart-panel" id="cart">
+  <h3 class="cart-title">Carrito</h3>
+
+  <div id="cart-items"></div>
+
+  <div class="cart-total">
+    Total: $<span id="cart-total">0</span> MXN
+  </div>
+
+  <button class="checkout-btn">
+    Finalizar compra
+  </button>
+</div>
+  <footer class="pea-footer">
+    <div class="footer-logo">PEA</div>
+    <p class="footer-txt">Plataforma Educativa Avanzada · PFA 3108</p>
+  </footer>
+</div>
+<script>
+let cart = [];
+let total = 0;
+
+function toggleCart(){
+  document.getElementById('cart')
+    .classList.toggle('open');
+}
+
+function addToCart(product, price){
+
+  cart.push({product,price});
+
+  total += price;
+
+  document.getElementById('cart-count')
+    .textContent = cart.length;
+
+  renderCart();
+}
+
+function renderCart(){
+
+  const container =
+    document.getElementById('cart-items');
+
+  container.innerHTML='';
+
+  cart.forEach(item=>{
+
+    container.innerHTML += `
+      <div class="cart-item">
+        <strong>${item.product}</strong><br>
+        $${item.price} MXN
+      </div>
+    `;
+
+  });
+
+  document.getElementById('cart-total')
+    .textContent = total;
+}
+</script>

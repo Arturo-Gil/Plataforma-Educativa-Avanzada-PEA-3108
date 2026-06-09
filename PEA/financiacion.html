@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Financiación | PEA</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;700&display=swap');
+
+*{box-sizing:border-box;margin:0;padding:0}
+
+body{
+font-family:'Inter',sans-serif;
+background:#f0f6ff;
+color:#0d1b2e;
+}
+
+.pea-nav{
+display:flex;
+align-items:center;
+justify-content:center;
+padding:1rem 2rem;
+background:rgba(255,255,255,.85);
+backdrop-filter:blur(12px);
+border-bottom:1px solid rgba(59,130,246,.15);
+position:sticky;
+top:0;
+z-index:100;
+}
+
+.pea-logo{
+position:absolute;
+left:2rem;
+font-family:'Playfair Display',serif;
+font-size:20px;
+font-weight:700;
+color:#1d4ed8;
+}
+
+.pea-logo span{color:#0ea5e9}
+
+.nav-links{display:flex;gap:1.5rem;list-style:none}
+
+.nav-links a{
+font-size:13px;
+color:#374151;
+text-decoration:none;
+}
+
+.nav-links a.active{
+color:#1d4ed8;
+font-weight:600;
+}
+
+.page-hero{
+padding:4rem 2rem;
+text-align:center;
+background:linear-gradient(145deg,#eff6ff,#e0f2fe 60%,#f0f9ff);
+border-bottom:1px solid rgba(59,130,246,.12);
+}
+
+.page-eyebrow{
+font-size:11px;
+font-weight:600;
+letter-spacing:1.5px;
+text-transform:uppercase;
+color:#0ea5e9;
+margin-bottom:.5rem;
+}
+
+.page-title{
+font-family:'Playfair Display',serif;
+font-size:40px;
+font-weight:700;
+margin-bottom:.7rem;
+}
+
+.page-sub{
+font-size:15px;
+color:#4b5563;
+max-width:750px;
+margin:auto;
+}
+
+.section{
+padding:3rem 2rem;
+max-width:1200px;
+margin:auto;
+}
+
+.grid-4{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:18px;
+}
+
+.grid-3{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:18px;
+}
+
+.card{
+background:white;
+padding:1.5rem;
+border-radius:16px;
+border:1px solid rgba(59,130,246,.15);
+box-shadow:0 2px 16px rgba(29,78,216,.07);
+}
+
+.card h3{
+font-family:'Playfair Display',serif;
+color:#1d4ed8;
+margin-bottom:.8rem;
+}
+
+.card p, .card li{
+color:#4b5563;
+line-height:1.8;
+}
+
+.stat{
+text-align:center;
+}
+
+.stat-number{
+font-size:2rem;
+font-weight:700;
+color:#1d4ed8;
+}
+
+.cta{
+background:linear-gradient(135deg,#1d4ed8,#0ea5e9);
+color:white;
+padding:2rem;
+border-radius:18px;
+text-align:center;
+}
+
+.cta h2{margin-bottom:1rem}
+
+.btn{
+display:inline-block;
+margin-top:1rem;
+padding:12px 24px;
+border:none;
+border-radius:10px;
+background:white;
+color:#1d4ed8;
+font-weight:600;
+cursor:pointer;
+}
+
+.logos{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+align-items:center;
+gap:2rem;
+padding-top:1rem;
+}
+
+.logos img{
+height:70px;
+max-width:140px;
+object-fit:contain;
+background:white;
+padding:10px;
+border-radius:12px;
+transition:.3s;
+}
+
+.logos img:hover{
+transform:translateY(-3px);
+}
+
+.modal{
+display:none;
+position:fixed;
+inset:0;
+background:rgba(0,0,0,.45);
+justify-content:center;
+align-items:center;
+z-index:2000;
+}
+
+.modal-box{
+background:white;
+padding:2rem;
+border-radius:18px;
+max-width:500px;
+width:90%;
+text-align:center;
+}
+
+.pea-footer{
+background:#0d1b2e;
+padding:1.5rem 2rem;
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin-top:3rem;
+}
+
+.footer-logo{
+font-family:'Playfair Display',serif;
+font-size:16px;
+font-weight:700;
+color:#60a5fa;
+}
+
+.footer-txt{
+font-size:12px;
+color:#6b7280;
+}
+
+@media(max-width:900px){
+.grid-4,.grid-3{grid-template-columns:1fr}
+.page-title{font-size:30px}
+}
+</style>
+</head>
+<body>
+
+<nav class="pea-nav">
+<div class="pea-logo">P<span>EA</span></div>
+<ul class="nav-links">
+<li><a href="inicio.html">Inicio</a></li>
+<li><a href="mision.html">Quiénes Somos</a></li>
+<li><a href="productos.html">Productos</a></li>
+<li><a href="campanas.html">Campañas</a></li>
+<li><a href="financiacion.html" class="active">Financiación</a></li>
+</ul>
+</nav>
+
+<div class="page-hero">
+<p class="page-eyebrow">Sostenibilidad educativa</p>
+<h1 class="page-title">Financiación</h1>
+<p class="page-sub">Impulsamos proyectos educativos mediante alianzas, donaciones y programas que generan oportunidades para miles de estudiantes mexicanos.</p>
+</div>
+
+<section class="section">
+<div class="grid-4">
+<div class="card"><h3> Cursos y Productos</h3><p>Los ingresos obtenidos mediante cursos, materiales y servicios educativos ayudan a financiar proyectos de impacto social.</p></div>
+<div class="card"><h3> Donaciones</h3><p>Aportaciones de ciudadanos comprometidos con la educación de calidad.</p></div>
+<div class="card"><h3> Empresas Aliadas</h3><p>Organizaciones que colaboran mediante recursos financieros, tecnología y equipamiento.</p></div>
+<div class="card"><h3> Programas Institucionales</h3><p>Apoyo de organismos públicos y privados para ampliar el alcance de las campañas.</p></div>
+</div>
+</section>
+
+<section class="section">
+<div class="grid-4">
+<div class="card stat"><div class="stat-number">854</div><p>Escuelas beneficiadas</p></div>
+<div class="card stat"><div class="stat-number">18,000</div><p>Estudiantes inscritos</p></div>
+<div class="card stat"><div class="stat-number">4</div><p>Campañas realizadas</p></div>
+<div class="card stat"><div class="stat-number">ODS 4</div><p>Educación de calidad</p></div>
+</div>
+</section>
+
+<section class="section">
+<div class="card">
+<h3>Empresas y Fundaciones Afiliadas</h3>
+<div class="logos">
+
+  <img src="https://www.fundacionazteca.org/img/logo_faz.png"
+       alt="Fundación Azteca">
+
+  <img src="https://spismun.mx/delpaseo/wp-content/uploads/2023/01/UNICEF.png"
+       alt="UNICEF">
+
+  <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg"
+       alt="Microsoft">
+
+  <img src="https://upload.wikimedia.org/wikipedia/commons/2/24/LEGO_logo.svg"
+       alt="LEGO">
+
+  <img src="https://upload.wikimedia.org/wikipedia/commons/a/ad/HP_logo_2012.svg"
+       alt="HP">
+
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="cta">
+<h2>Apoya la educación en México</h2>
+<p>Tu apoyo ayuda a reparar escuelas, entregar útiles y ampliar oportunidades educativas.</p>
+<button class="btn" onclick="abrirModal()">Donar ahora</button>
+</div>
+</section>
+
+<section class="section">
+<div class="grid-3">
+<div class="card">
+<h3>Formas de apoyar</h3>
+<ul>
+<li>Donación monetaria</li>
+<li>Donación en especie</li>
+<li>Voluntariado</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Transparencia</h3>
+<p>Publicamos reportes periódicos sobre el uso de los recursos y el impacto generado por nuestras iniciativas.</p>
+</div>
+
+<div class="card">
+<h3>Contacto</h3>
+<p> dptofinanzas@pea.org.mx</p>
+<p> +52 55 1234 5678</p>
+<p> Ciudad de México · Guadalajara · Monterrey</p>
+</div>
+</div>
+</section>
+
+<div class="modal" id="modal">
+<div class="modal-box">
+<h2>Demostración académica</h2>
+<p>Esta es una simulación de donación para el proyecto PEA. No se realizará ningún pago real.</p>
+<button class="btn" onclick="cerrarModal()">Entendido</button>
+</div>
+</div>
+
+<footer class="pea-footer">
+<div class="footer-logo">PEA</div>
+<p class="footer-txt">Plataforma Educativa Avanzada · PFA 3108</p>
+</footer>
+
+<script>
+function abrirModal(){
+document.getElementById('modal').style.display='flex';
+}
+function cerrarModal(){
+document.getElementById('modal').style.display='none';
+}
+</script>
+
+</body>
+</html>
