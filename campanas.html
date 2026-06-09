@@ -1,0 +1,120 @@
+<title>Campañas | PEA</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap');
+*{box-sizing:border-box;margin:0;padding:0}
+.pea{font-family:'Inter',sans-serif;background:#f0f6ff;color:#0d1b2e}
+.pea-nav{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:1rem 2rem;
+  background:rgba(255,255,255,0.85);
+  backdrop-filter:blur(12px);
+  border-bottom:1px solid rgba(59,130,246,0.15);
+  position:relative;
+}
+.pea-logo{
+  position:absolute;
+  left:2rem;
+  font-family:'Playfair Display',serif;
+  font-size:20px;
+  font-weight:700;
+  color:#1d4ed8;
+}
+.pea-logo span{color:#0ea5e9}
+.nav-links{display:flex;gap:1.5rem;list-style:none}
+.nav-links a{font-size:13px;color:#374151;text-decoration:none}
+.nav-links a.active{color:#1d4ed8;font-weight:500}
+.nav-btn{font-size:13px;font-family:'Inter',sans-serif;font-weight:600;background:linear-gradient(135deg,#1d4ed8,#0ea5e9);color:#ffffff;border:none;padding:8px 18px;border-radius:8px;cursor:pointer;box-shadow:0 2px 10px rgba(29,78,216,0.35)}
+.page-hero{padding:3rem 2rem 2rem;background:linear-gradient(145deg,#eff6ff,#e0f2fe 60%,#f0f9ff);border-bottom:1px solid rgba(59,130,246,0.12)}
+.page-eyebrow{font-size:11px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#0ea5e9;margin-bottom:.5rem}
+.page-title{font-family:'Playfair Display',serif;font-size:34px;font-weight:700;color:#0d1b2e;margin-bottom:.5rem;letter-spacing:-.5px}
+.page-sub{font-size:15px;color:#4b5563}
+.camp-intro{padding:2.5rem 2rem;background:linear-gradient(180deg,#eff6ff,#f0f9ff)}
+.intro-text{font-size:15px;color:#4b5563;line-height:1.85;max-width:820px}
+.pea-sep{height:1px;background:linear-gradient(to right,transparent,rgba(59,130,246,0.2),transparent);margin:0 2rem}
+.camp-section{padding:2.5rem 2rem}
+.sec-label{font-size:11px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#0ea5e9;margin-bottom:.5rem}
+.sec-title{font-family:'Playfair Display',serif;font-size:24px;font-weight:700;color:#0d1b2e;margin-bottom:1.5rem;letter-spacing:-.5px}
+.camp-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.camp-card{background:rgba(255,255,255,0.92);border:1px solid rgba(59,130,246,0.15);border-radius:16px;overflow:hidden;box-shadow:0 4px 20px rgba(29,78,216,0.08),inset 0 1px 0 #fff;display:flex}
+.camp-img{width:180px;flex-shrink:0;overflow:hidden}
+.camp-img img{width:100%;height:100%;object-fit:cover}
+.camp-body{padding:1.25rem;display:flex;flex-direction:column;gap:8px}
+.camp-tag{display:inline-block;font-size:10px;font-weight:600;letter-spacing:1px;text-transform:uppercase;background:rgba(29,78,216,0.08);color:#1d4ed8;padding:3px 10px;border-radius:20px;border:1px solid rgba(29,78,216,0.2);width:fit-content}
+.camp-name{font-family:'Playfair Display',serif;font-size:18px;font-weight:700;color:#1e3a8a;line-height:1.2}
+.camp-desc{font-size:13px;color:#4b5563;line-height:1.6;flex:1}
+.camp-link{display:inline-flex;align-items:center;gap:6px;font-size:13px;font-weight:600;color:#1d4ed8;text-decoration:none;margin-top:auto}
+.pea-footer{background:#0d1b2e;padding:1.5rem 2rem;display:flex;justify-content:space-between;align-items:center;margin-top:2rem}
+.footer-logo{font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:#60a5fa}
+.footer-txt{font-size:12px;color:#6b7280}
+</style>
+<div class="pea">
+  <nav class="pea-nav">
+    <div class="pea-logo">P<span>EA</span></div>
+    <ul class="nav-links">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="mision.html">Quiénes Somos</a></li>
+      <li><a href="productos.html">Productos</a></li>
+      <li><a href="campanas.html" class="active">Campañas</a></li>
+      <li><a href="financiacion.html">Financiación</a></li>
+    </ul>
+
+  </nav>
+  <div class="page-hero">
+    <p class="page-eyebrow">Iniciativas sociales</p>
+    <h1 class="page-title">Campañas Educativas</h1>
+    <p class="page-sub">Explora nuestras iniciativas en desarrollo educativo.</p>
+  </div>
+  <section class="camp-intro">
+    <p class="intro-text">En nuestra empresa creemos firmemente que la educación es la base del progreso individual y colectivo. Como parte de nuestro compromiso social, llevamos a cabo diversas campañas educativas en distintas regiones de la República Mexicana, con una periodicidad aproximada de seis meses entre cada una. Estas campañas tienen como objetivo brindar oportunidades de aprendizaje y desarrollo a personas que, por diversas circunstancias, no tienen fácil acceso a la educación formal. A través de nuestras iniciativas, fomentamos la inclusión educativa, impulsamos la equidad de oportunidades y fortalecemos el valor de la educación como un derecho fundamental.</p>
+  </section>
+  <div class="pea-sep"></div>
+  <section class="camp-section">
+    <p class="sec-label">Nuestras iniciativas</p>
+    <h2 class="sec-title">Explora las campañas</h2>
+    <div class="camp-grid">
+      <div class="camp-card">
+        <div class="camp-img"><img src="https://upload.wikimedia.org/wikipedia/commons/e/e5/Chenalh%C3%B3_-_Chiapas_-_Mexico_-_panoramio.jpg" alt="Chiapas"></div>
+        <div class="camp-body">
+          <span class="camp-tag">Chiapas</span>
+          <p class="camp-name">Mochilas con Futuro</p>
+          <p class="camp-desc">Apoyar a los niños y jóvenes con útiles escolares.</p>
+          <a href="chiapas.html" class="camp-link">Ver más <i class="ti ti-arrow-right" aria-hidden="true"></i></a>
+        </div>
+      </div>
+      <div class="camp-card">
+        <div class="camp-img"><img src="https://oaxaca.quadratin.com.mx/www/wp-content/uploads/2020/05/3-ixtlan-de-juarez-pueblo-magico-OAXACA-guiasdeviajemx-1160x700.jpg" alt="Oaxaca"></div>
+        <div class="camp-body">
+          <span class="camp-tag">Oaxaca</span>
+          <p class="camp-name">Aulas del Mañana</p>
+          <p class="camp-desc">Escuela gratuita temporal en comunidades rurales.</p>
+          <a href="oaxaca.html" class="camp-link">Ver más <i class="ti ti-arrow-right" aria-hidden="true"></i></a>
+        </div>
+      </div>
+      <div class="camp-card">
+        <div class="camp-img"><img src="https://visitmexico.com/media/usercontent/67f95959722d2-FcYu9nHWQAMtX_y_gmxdot_jpg" alt="Michoacan"></div>
+        <div class="camp-body">
+          <span class="camp-tag">Michoacán</span>
+          <p class="camp-name">Puentes del Saber</p>
+          <p class="camp-desc">Crear espacios educativos gratuitos y temporales en comunidades rurales.</p>
+          <a href="michoacan.html" class="camp-link">Ver más <i class="ti ti-arrow-right" aria-hidden="true"></i></a>
+        </div>
+      </div>
+      <div class="camp-card">
+        <div class="camp-img"><img src="https://turismoafondo.mx/wp-content/uploads/2022/04/coyuca-de-benitez.jpg" alt="Guerrero"></div>
+        <div class="camp-body">
+          <span class="camp-tag">Guerrero</span>
+          <p class="camp-name">Escuelas que Renacen</p>
+          <p class="camp-desc">Reconstruir y rehabilitar los espacios escolares afectados.</p>
+          <a href="guerrero.html" class="camp-link">Ver más <i class="ti ti-arrow-right" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="pea-footer">
+    <div class="footer-logo">PEA</div>
+    <p class="footer-txt">Plataforma Educativa Avanzada · PFA 3108</p>
+  </footer>
+</div>
